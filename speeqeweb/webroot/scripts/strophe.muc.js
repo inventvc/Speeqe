@@ -140,7 +140,7 @@ Strophe.addConnectionPlugin('muc', {
                         id: msgid}).c("body",
                                       {xmlns: Strophe.NS.CLIENT}).t(message);
         if (nick !== null) {
-            msg.up().c("nick", {xmlns: Stophe.NS.NICK}).t(nick);
+            msg.up().c("nick", {xmlns: Strophe.NS.NICK}).t(nick);
         }
         msg.up().c("x", {xmlns: "jabber:x:event"}).c("composing");
         this._connection.send(msg);
